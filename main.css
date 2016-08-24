@@ -3,26 +3,29 @@
 	width: 100%;
 }
 
-.nav {
-	margin-top: 45px;
-}
-.nav li a:hover, 
-.nav li a:active{
-	background-color: white;
-}
-
-.nav li a {
-	font-family: "Nunito";
-	color: #1C3144;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: right;
-}
-
-.welcome {
-	background: url(./img/logo.png) no-repeat;
-	background-size: contain;
-	background-position: center;
+.first {
+	background: url(./img/starcraft.jpg);
 	height: 100vh;
 	width: 100vh;
+	position: relative;
+	z-index: -1;
+}
+.navbar-nav li a {
+	font-family: "Nunito";
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+.logo-holder {
+	z-index: 1;
+	position: absolute;
+}
+
+.logo {
+	padding-top: 40px;
+	height: auto;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
 }
